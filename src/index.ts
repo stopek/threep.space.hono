@@ -1,13 +1,7 @@
 import { Hono } from 'hono'
-import works from "./works";
-import { prettyJSON } from 'hono/pretty-json'
+import works from "./works"
 
 const app = new Hono<{ Bindings: CloudflareBindings }>()
-app.use(prettyJSON())
-
-app.get('/', (c) => {
-  return c.text('Hello Hono')
-})
 
 app.route('/works', works)
 
