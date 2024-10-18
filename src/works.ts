@@ -58,7 +58,7 @@ app.get('/', async (c) => {
 			},
 			category: ["react", "createit"],
 			inside: {
-				preview: "/mertegra",
+				window: "/mertegra",
 				storybook: "/mertegra-storybook",
 			},
 			image: "/works/mertegra.jpg",
@@ -111,7 +111,7 @@ app.get('/', async (c) => {
 				en: "<strong>Main features:</strong><ol><li>Case management and handling</li><li>Balances calculation</li><li>Summons generation</li><li>Interest calculation</li><li>Attachment allocation</li><li>Action adding to cases</li><li>Debtor management</li><li>Contractor management</li><li>Interest categories and periods management</li><li>Case statuses management</li></ol>",
 			},
 			order: 7,
-			name: "Pactum - Debt collection agency tool",
+			name: "Debt collection agency tool",
 
 			description: {
 				pl: "<em>System usprawniający pracę firmy windykacyjnej</em>",
@@ -120,8 +120,9 @@ app.get('/', async (c) => {
 			category: ["symfony", "mediart"],
 			stack: ["symfony", "mysql", "scss", "js"],
 			image: "/works/pactumwindykacja.jpg",
-			slug: "pactum-windykacja",
+			slug: "debt",
 			inside: {
+				window: "https://debt.threep.space",
 				docs: "https://docs.google.com/document/d/1I9qdYkCj_FAG3aUvCyrOwTo39_axka4O/edit?rtpof=true",
 			},
 			last: true,
@@ -945,6 +946,23 @@ app.get('/', async (c) => {
 			inside: {
 				archive: "https://web.archive.org/web/20220519042431/https://satellcad.pl/",
 			},
+		},
+		{
+			name: "Portfolio",
+			description: {
+				pl: "",
+				en: "",
+			},
+			category: ["react", "freelancer"],
+			stack: ["react", "material", "ts"],
+			image: "/works/threep.jpg",
+			slug: "threep",
+			inside: {
+				preview: "https://threep.space",
+				github_backend: "https://github.com/stopek/threep.space.hono",
+				github_front: "https://github.com/stopek/threep.space",
+			},
+			last: true,
 		},
 	])
 });
